@@ -1,0 +1,94 @@
+Assignment	|	Date	|	Time	|	Change
+----------------------------------------------------------------------------------------------------------------------
+	0		|	1/12	|	1:00pm	|	Downloaded MinGW and configured PATH
+	0		|	1/12	|	2:00pm	|	Played around with arrays and printing them
+	0		|	1/12	|	5:00pm	|	Did some research on the Knights Tour and known algorithms
+	0		|	1/12 	|	7:00pm	|	Started implementing my own algorithm to find one path at one starting spot
+	0		|	1/12	|	8:00pm	|	Started implementing algorithm to find all paths at one start spot
+	0		|	1/12	|	9:00pm	|	Got stuck on why code couldnt find more than one path
+	0		|	1/13	|	1:00pm	|	Figured out that I needed to have the code re-enter loop after path found
+	0		|	1/13	|	1:30pm	|	Got code working to find all paths at one starting spot
+	0		|	1/13	|	2:00pm	|	Started working on iterating over all starting points
+	0		|	1/13	|	2:30pm	|	Finished code to find and print all paths on the knights tour
+	0		|	1/18	|	11:00am	|	Wrote MakeFile and README for Assignment 0
+----------------------------------------------------------------------------------------------------------------------
+	1.01	|	1/18	|	8:00pm	|	Started assignment, reading over pdf and making .c file(s)
+	1.01	|	1/18	| 	8:30pm	|	Started creating methods to initialzed and print the dungeon with hardcoded values
+	1.01	|	1/18	| 	9:00pm	|	Trying to find spots to randomly place rooms with hardcoded height and width 
+	1.01	|	1/18	| 	9:15pm	|	Running into bug with the validate method where it is returning 1 when it shouldnt	
+	1.01	|	1/20	| 	10:00am	|	Went back to the drawing board with placing rooms. Not random right now
+	1.01	|	1/20	| 	10:15am	|	Hardcoded height and width and iterating over board to find spot to put that rooms
+	1.01	|	1/20	| 	10:20am	|	Later I will find random height and width for room and iterate over board to find place for room
+	1.01	|	1/20	| 	10:20am	|	After that I will find random place to put the room with random height and width	
+	1.01	|	1/20	| 	10:20pm	|	Got it to randomly place rooms with fixed height and width but now validate placement doesn't work	
+	1.01	|	1/20	| 	10:30pm	|	Realized I was only checking for room padding in the negative direction and not the positive direction	
+	1.01	|	1/20	| 	10:45pm	|	Got it to randomly place a room of width 8-13 units and height of 5-10 units. Will start working on hallways.
+	1.01	|	1/22	| 	10:00am	|	Starting to implement Dijkstras for hallways.
+	1.01	|	1/22	| 	3:00pm	|	Running into a segfault and running out of memory, need to use malloc
+	1.01	|	1/22	| 	4:00pm	|	Dijsktra's working and prints hallways and 12 rooms, need to fix hausdorf distance
+	1.01	|	1/27	| 	10:00am	|	Fixed Hausdorf, need Makefile then ready to turn in
+----------------------------------------------------------------------------------------------------------------------
+	1.02	|	1/30	|	3:00pm 	|	Started assignment, working on writing to a file
+	1.02	|	1/30	|	5:00pm 	|	Able to write to a file on my laptop
+	1.02	|	1/30	|	7:00pm 	|	Running into an issue with endianess on Windows
+	1.02	|	1/31	|	12:00pm |	Fixed endianess issue
+	1.02	|	2/1		|	11:00am	|	Working on reading from a file
+	1.02	|	2/1		|	5:00pm	|	Able to read and write from a file
+	1.02	|	2/2		|	2:00am	|	Optimized method of making path to make program run faster
+----------------------------------------------------------------------------------------------------------------------
+	1.03	|	2/4		|	1:00pm	|	Started assignment, looked into building a priority queue
+	1.03	|	2/4		|	2:00pm	|	Might have PQ setup, attempting djikstras
+	1.03	|	2/4		|	3:00pm	|	Problem with djikstras, laptop dead, will look more into it tomorrow
+	1.03	|	2/7		|	3:00pm	|	Debugged Djikstra's for a while and found a problem with PriorityQ decrease priority
+	1.03	|	2/7		|	3:30pm	|	Finished Djikstras
+	1.03	|	2/9		|	10:00am	|	Put PrioQ and Dungeon into Header files to use for later
+	1.03	|	2/9		|	10:30am	|	Made Makefile
+----------------------------------------------------------------------------------------------------------------------
+	1.04	|	2/9		|	2:00pm	|	Started project, randomly placing PC in a room
+	1.04	|	2/17	|	12:00pm	|	Randomly places monsters inside the dungeon
+	1.04	|	2/19	|	1:00pm	|	Converted priority queue into a binary heap so program runs faster (took a while)
+	1.04	|	2/20	|	8:00pm	|	Fixing djikstras to return the coordinates of a cell for monster to move to next
+	1.04	|	2/21	|	4:00pm	|	Altered project so all monsters move every turn and move toward user until they reach user
+	1.04	|	2/21	|	7:00pm	|	Altered project so that all characters are put in a queue based on their speed (turns left until move)
+	1.04	|	2/21	|	9:00pm	|	Implemented DUMB monster movement
+	1.04	|	2/23	|	6:00pm	|	Added ncurses for visual appeal (not working fully)
+----------------------------------------------------------------------------------------------------------------------
+	1.05	|	2/26	|	6:00pm	|	Modified code based off suggestions from solutions
+	1.05	|	2/28	|	6:00pm	|	Added Ncurses code to move the character
+	1.05	|	2/28	|	8:00pm	|	Modifying view that the PC has to be smaller and centered
+	1.05	|	2/28	|	9:00pm	|	Ran into bug where PC had weird view when going into the corners or walls
+	1.05	|	2/28	|	9:30pm	|	Fixed bug
+	1.05	|	3/2		|	12:00pm	|	Bug where I am invisible when entering look mode or changing floors
+	1.05	|	3/2		|	3:10pm	|	Fixed bug
+-----------------------------------------------------------------------------------------------------------------------
+	1.06	|	3/9		|	4:15pm	|	Starting project
+	1.06	|	3/9		|	5:15pm	|	Bug when loading the project. Not loading cells correctly
+	1.06	|	3/9		|	6:15pm	|	Fixed bug, project complete
+-----------------------------------------------------------------------------------------------------------------------
+	1.07	|	3/25	|	10:00 am|	Starting project, creating cpp files and basic read functions
+	1.07	|	3/26	|	10:00 am|	Created monster and dice classes to populate
+	1.07	|	3/26	|	11:00 am|	Starting to parse file to populate monsters
+	1.07	|	3/26	|	12:00 pm|	Fixing some error checking when inputing dice formulas
+	1.07	|	3/26	|	7:00 pm	|	Altered Makefile to be easily extended in the future
+	1.07	|	3/29	|	11:00 am|	Testing in PUTTY
+	1.07	|	3/29	|	12:00 pm|	Weird issue with Windows text files vs Linux text files (FIXED)
+------------------------------------------------------------------------------------------------------------------------
+	1.08	|	4/1 	|	2:00 pm |	Created folder and transfered code
+    1.08	|	4/3 	|	12:00 pm|	Added code for parsing objects, fixing naming errors
+    1.08	|	4/3 	|	2:00 pm |	There seems to be an error in the text file (FIXED)
+    1.08	|	4/5 	|	3:00 pm |	Finished ready for grading
+------------------------------------------------------------------------------------------------------------------------
+    1.09	|	4/11 	|	10:00 am|	Started assignment 9
+    1.09	|	4/11 	|	11:00 am|	Created object class
+    1.09	|	4/11 	|	12:00 pm|	Created generation methods in descriptions files
+    1.09	|	4/11 	|	1:00 pm |	Weird error where all symbols are the same
+    1.09	|	4/13 	|	10:00 am|	Error Fixed, added color to ncurses
+-------------------------------------------------------------------------------------------------------------------------
+    1.10    |   4/15    |   5:00pm  |   Started project, integrated professors code
+    1.10    |   4/15    |   5:20pm  |   Created item slots and inventory for pc
+    1.10    |   4/15    |   5:30pm  |   Implementing new methods to pick up, drop, wear, and expunge items
+    1.10    |   4/15    |   7:00pm  |   New bug with trying to step on monsters (FIXED)
+    1.10    |   4/18    |   3:00pm  |   Added new method to see pc stats
+    1.10    |   4/18    |   5:00pm  |   Added combat features to take damage into account
+    1.10    |   4/18    |   7:00pm  |   Created README, tested
+    
